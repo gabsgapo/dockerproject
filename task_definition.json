@@ -1,0 +1,48 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:220816636489:task-definition/ecs-family:2",
+    "containerDefinitions": [
+        {
+            "name": "my-website",
+            "image": "nginx",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "family": "ecs-family",
+    "executionRoleArn": "arn:aws:iam::220816636489:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 2,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2023-08-05T02:05:09.558Z",
+    "registeredBy": "arn:aws:iam::220816636489:user/Gabs",
+    "tags": []
+}
