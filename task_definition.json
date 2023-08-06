@@ -21,6 +21,12 @@
     "family": "ecs-family",
     "executionRoleArn": "arn:aws:iam::220816636489:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": ["subnet-05525b69e57633daa", "subnet-04508dde4fdca09eb"],
+            "securityGroups": ["sg-0e3f69048d047c73b"]
+        }
+    },
     "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
