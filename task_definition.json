@@ -27,16 +27,6 @@
     "family": "ecs-family",
     "executionRoleArn": "arn:aws:iam::220816636489:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "NetworkConfiguration": {
-          "AwsvpcConfiguration": {
-            "SecurityGroups": {
-              "Ref": "SecurityGroupIDs"
-            },
-            "Subnets": {
-              "Ref": "SubnetIDs"
-            }
-          }
-    },
     "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
