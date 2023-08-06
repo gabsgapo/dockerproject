@@ -12,12 +12,6 @@
                     "protocol": "tcp"
                 }
             ],
-             "networkConfiguration": {
-                 "awsvpcConfiguration": {
-                     "securityGroups": ["sg-0e3f69048d047c73b"]
-                     "subnets": ["subnet-05525b69e57633daa","subnet-05d9cfcf0210c57d8","subnet-03307c9ac87e00b43","subnet-0f7d0e19721221d24","subnet-0868d12e013b4e21b","subnet-04508dde4fdca09eb"],
-                 }
-             },
             "essential": true,
             "environment": [],
             "mountPoints": [],
